@@ -64,6 +64,12 @@ body {
 		background-color 100ms linear;
 }
 
+.chart__item:hover,
+.chart__item:focus,
+.chart__item:active {
+	background-color: rgba(255, 255, 255, 0.17);
+}
+
 .chart__link,
 .chart__link:link,
 .chart__link:visited {
@@ -81,13 +87,11 @@ body {
   text-align: center;
 	
 	transition: 
-		background-color 100ms linear;
+		color 100ms linear;
 }
 
-.chart__label:hover,
-.chart__label:focus,
-.chart__lavel:active{
-	background-color: #fff;
+.chart__item:hover .chart__label {
+	color: #fff;
 }
 
 .chart__bar-wrap {
@@ -109,10 +113,8 @@ body {
 		background-color 100ms linear;
 }
 
-.chart__bar:hover,
-.chart__bar:focus,
-.chart__bar:active {
-		background-color: rgba(216, 244, 255, 0.94);
+.chart__item:hover .chart__bar {
+		background-color: rgb(123, 218, 255);
 }
 
 .chart__count {
@@ -147,15 +149,4 @@ body {
 }
 
 
-	transition: 
-		background-color 1000ms linear, 
-		border-radius 2000ms linear
-	;
-}
-
-
-
-chart__bar transitions to brighter colour on hover
-chart__item transitions to demonstrate full height on hover
-chart__label
 
